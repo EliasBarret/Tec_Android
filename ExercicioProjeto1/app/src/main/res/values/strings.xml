@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ExercicioProjeto1</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_cadastro">Cadastro</string>
+    <string name="title_activity_consulta">Consulta</string>
+    <string name="title_activity_lista_consult">listaConsult</string>
+</resources>

@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Material">
+        <!-- Customize your theme here. -->
+        <!--   darker variant for the status bar pallet and contextual app bars -->
+
+
+    </style>
+
+    <style name="Calculator" parent= "android:Theme.Material">
+        <item name="android:colorPrimaryDark">#5F8DD3</item>
+        <!--   your app branding color for the app bar -->
+        <item name="android:colorPrimary">#3771C8</item>
+        <!--   azul escuro #3771C8 #004d40  claro #5F8DD3 #00695c-->
+        <item name="android:navigationBarColor">#3771C8</item>
+      <!--  <item name="android:windowBackground">#00112B</item>-->
+    </style>
+</resources>

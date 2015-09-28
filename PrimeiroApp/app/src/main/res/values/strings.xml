@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PrimeiroApp</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="botao1">Botao 1</string>
+    <string name="botao2">Botao 2</string>
+    <string name="botao3">Botao 3</string>
+    <string name="botao4">Botao 4</string>
+    <string name="title_activity_main_cadastro_tela">MainCadastroTela</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_activity_quiz1">ActivityQuiz1</string>
+    <string name="title_activity_aula_05_">Aula_05_Activity</string>
+    
+</resources>
