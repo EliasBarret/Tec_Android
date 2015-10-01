@@ -22,7 +22,7 @@ public class MenuTela extends ListActivity {
     protected void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
-        String[] itens = new String[]{"Aplicativo De Cadastro", "CalculadoraExeA", "Prova AV1","projeto 5"};
+        String[] itens = new String[]{"Aplicativo De Cadastro", "CalculadoraExeA", "Prova AV1","projeto 5","test","test"};
 
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_expandable_list_item_1, itens);
         setListAdapter(arrayAdapter);
@@ -45,7 +45,13 @@ public class MenuTela extends ListActivity {
                 startActivity(new Intent(this, CalculadoraAV1.class));
                 break;
             case 3:
-               Toast.makeText(this,"exercicio",Toast.LENGTH_LONG).show();
+                startActivity(new Intent(this, Autenticacao.class));
+                break;
+            case 4:
+                startActivity(new Intent(this, Expre_calc.class));
+                break;
+            case 5:
+                Toast.makeText(this,"exercicio",Toast.LENGTH_LONG).show();
                 break;
             default:
                 finish();

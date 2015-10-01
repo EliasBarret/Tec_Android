@@ -23,6 +23,7 @@ public class CalculadoraAV1 extends Activity  {
     Button b1, b2, b3, b4, b5, b6, b7, b8, b9, b0, btIgual, btSoma, btDiv, btMenos, btVezes, bponto, Pare1, Pare2, Ac, Belevado, Braiz, bdel;
     TextView visor;
     String k;
+    JsEvaluator jsEvaluator = new JsEvaluator(this);
    // boolean veriP = false;
 
     @Override
@@ -244,8 +245,6 @@ public class CalculadoraAV1 extends Activity  {
     */
 
     public void calc(String exp) {
-
-        JsEvaluator jsEvaluator = new JsEvaluator(this);
         try {
             jsEvaluator.evaluate(exp, new JsCallback() {
                 @Override
