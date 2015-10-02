@@ -20,4 +20,6 @@
     <string name="title_activity_main2">Main2Activity</string>
     <string name="title_activity_autenticacao">Autenticacao</string>
     <string name="title_activity_expre_calc">Expre_calc</string>
+    <string name="title_activity_imagem_tela_java">ImagemTelaJava</string>
+    <string name="title_activity_calculadora_simples">Calculadora_Simples</string>
 </resources>

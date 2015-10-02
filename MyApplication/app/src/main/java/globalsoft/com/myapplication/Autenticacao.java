@@ -1,6 +1,7 @@
 package globalsoft.com.myapplication;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -39,7 +40,8 @@ public class Autenticacao extends Activity {
                 String senh = senha.getText().toString();
 
                 if (nome.equals(loginC) && senh.equals(senhaC)){
-                    Toast.makeText(Autenticacao.this,"entrou",Toast.LENGTH_LONG).show();
+                    //Toast.makeText(Autenticacao.this,"Login Elias ",Toast.LENGTH_LONG).show();
+                    Chamar();
                 }else{
                     Toast.makeText(Autenticacao.this,"erro",Toast.LENGTH_LONG).show();
 
@@ -51,9 +53,10 @@ public class Autenticacao extends Activity {
 
     }
 
-    private void verificar() {
-
-
+    private void Chamar() {
+        Intent i = (new Intent(this,ImagemTelaJava.class));
+        startActivity(i);
+        //startActivity(new Intent(this, ImagemTelaJava.class));
     }
 
     @Override

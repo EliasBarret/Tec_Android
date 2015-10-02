@@ -249,8 +249,12 @@ public class CalculadoraAV1 extends Activity  {
             jsEvaluator.evaluate(exp, new JsCallback() {
                 @Override
                 public void onResult(final String result) {
-                    double zx = Double.parseDouble(result);
-                    formatarSaida(zx);
+                    //double zx = Double.parseDouble(result);
+                    //formatarSaida(zx);
+                    String xc = String.valueOf(result);
+                    k="";
+                    k+=xc;
+                    visor.setText(k);
 
                 }
 
@@ -264,7 +268,10 @@ public class CalculadoraAV1 extends Activity  {
     public void MRaiz(String ki) {
         try {
             double res = Double.parseDouble(ki);
-            visor.setText(String.valueOf(Math.sqrt(res)));
+            String Ra = String.valueOf(Math.sqrt(res));
+            k="";
+            k+=Ra;
+            visor.setText(Ra);
         } catch (Exception A) {
             Toast.makeText(this, "Erro De Syntax", Toast.LENGTH_LONG).show();
             VibrarErro();
@@ -275,7 +282,11 @@ public class CalculadoraAV1 extends Activity  {
     public void MxELEVADO(String x) {
         try {
             double res = Double.parseDouble(x);
-            visor.setText(String.valueOf(Math.pow(res, 2)));
+            String ele = String.valueOf(Math.pow(res, 2));
+            k="";
+            k+=ele;
+            visor.setText(ele);
+
         } catch (Exception A) {
             Toast.makeText(this, "Erro De Syntax", Toast.LENGTH_LONG).show();
             VibrarErro();

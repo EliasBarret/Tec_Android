@@ -22,20 +22,29 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="+"
-        android:id="@+id/btnSomaCalcA"
-        android:layout_alignParentBottom="true"
-        android:layout_toEndOf="@+id/btnSubCalcA" />
-
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/tfResulCalcA"
         android:layout_centerVertical="true"
         android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/btnSomaCalcA"
+        android:layout_gravity="right"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/tfResulCalcA" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:id="@+id/btnDivCalcA"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/btnSomaCalcA" />
 
     <Button
         android:layout_width="wrap_content"
@@ -50,14 +59,8 @@
         android:layout_height="wrap_content"
         android:text="x"
         android:id="@+id/btnMultCalcA"
+        android:layout_gravity="center_horizontal"
         android:layout_alignParentBottom="true"
-        android:layout_toStartOf="@+id/btnDivCalcA" />
+        android:layout_toEndOf="@+id/btnSubCalcA" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="/"
-        android:id="@+id/btnDivCalcA"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
 </RelativeLayout>

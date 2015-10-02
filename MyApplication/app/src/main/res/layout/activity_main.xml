@@ -20,16 +20,18 @@
         android:layout_height="wrap_content"
         android:text="Nome"
         android:id="@+id/txMostrarNome"
-        android:layout_above="@+id/etNome"
-        android:layout_alignEnd="@+id/textView7" />
+        android:layout_alignEnd="@+id/textView7"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="CPF"
         android:id="@+id/textView2"
-        android:layout_above="@+id/etCpf"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/textView3"
+        android:layout_alignTop="@+id/etCpf" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -122,7 +124,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/etNome"
         android:layout_alignParentStart="true"
-        android:layout_above="@+id/textView2" />
+        android:layout_above="@+id/textView2"
+        android:layout_alignTop="@+id/txMostrarNome" />
 
     <EditText
         android:layout_width="500px"

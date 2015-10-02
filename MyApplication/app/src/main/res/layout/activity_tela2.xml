@@ -19,12 +19,13 @@
         android:textColor="#53a135"/>
 
     <ImageView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+
         android:id="@+id/imageView"
         android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
-        android:src="@drawable/my_globe_im"/>
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/smile"/>
 
     <EditText
         android:layout_width="fill_parent"
