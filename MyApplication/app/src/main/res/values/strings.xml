@@ -22,4 +22,7 @@
     <string name="title_activity_expre_calc">Expre_calc</string>
     <string name="title_activity_imagem_tela_java">ImagemTelaJava</string>
     <string name="title_activity_calculadora_simples">Calculadora_Simples</string>
+    <string name="title_activity_entradafade_in">Entradafade_in</string>
+    <string name="title_activity_activity_fadein">activity_fadein</string>
+    <string name="title_activity_animcao_rb">AnimcaoRB</string>
 </resources>

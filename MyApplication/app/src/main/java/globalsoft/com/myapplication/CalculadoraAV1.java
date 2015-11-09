@@ -225,7 +225,6 @@ public class CalculadoraAV1 extends Activity  {
         bdel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // String s = "Puxa vida, está vindo um lixo no fim da string*";
 
                 if (k.length() > 0) {
                     k = k.substring(0, k.length() - 1);
@@ -249,8 +248,7 @@ public class CalculadoraAV1 extends Activity  {
             jsEvaluator.evaluate(exp, new JsCallback() {
                 @Override
                 public void onResult(final String result) {
-                    //double zx = Double.parseDouble(result);
-                    //formatarSaida(zx);
+
                     String xc = String.valueOf(result);
                     k="";
                     k+=xc;
@@ -288,7 +286,7 @@ public class CalculadoraAV1 extends Activity  {
             visor.setText(ele);
 
         } catch (Exception A) {
-            Toast.makeText(this, "Erro De Syntax", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, " Erro De Syntax ", Toast.LENGTH_LONG).show();
             VibrarErro();
         }
     }
@@ -310,18 +308,18 @@ public class CalculadoraAV1 extends Activity  {
                 visor.setText(String.valueOf(resultado));
             }
         } catch (Exception A) {
-            Toast.makeText(this, "Erro De Syntax", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, " Erro De Syntax ", Toast.LENGTH_LONG).show();
         }
     }
 
     private void VibrarErro() {
         Vibrator rr = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
-        long milliseconds = 40;//'30' é o tempo em milissegundos, é basicamente o tempo de duração da vibração. portanto, quanto maior este numero, mais tempo de vibração você irá ter
+        long milliseconds =40;//'30' é o tempo em milissegundos, é basicamente o tempo de duração da vibração. portanto, quanto maior este numero, mais tempo de vibração você irá ter
         rr.vibrate(milliseconds);
     }
 
     public void Trat() {
-        Toast.makeText(this, "ERRO 3305.: Favor Inserir Numero", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, " Erro de Sintax ", Toast.LENGTH_LONG).show();
         return;
     }
 }
